@@ -1,0 +1,24 @@
+<h1>update record</h1>
+
+<form action="updaterecord/{{mymember.id}}" method="post">
+{% csrf_token %}
+Empid:<br>
+<input name="emp_id"value="{{ mymember.emp_id }}">
+<br><br>
+Empname:<br>
+<input name="emp_name"value="{{ mymember.emp_name }}">
+<br><br>
+Designation:<br>
+<input name="designation"value="{{ mymember.designation }}">
+<br><br>
+Salary:<br>
+<input name="salary"value="{{ mymember.salary }}">
+<br><br>
+Emailid:<br>
+<input name="email_id"value="{{ mymember.email_id }}">
+<br><br>
+Doj:<br>
+<input name="doj"value="{{ mymember.doj }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
